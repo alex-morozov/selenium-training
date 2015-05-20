@@ -29,14 +29,6 @@ public class FilmHelper2 extends DriverBasedHelper implements FilmHelper {
   public void search(String title) {
 	  pages.internalPage.ensurePageLoaded()
 	 .searchMovie(title);	  
-  }
-  
-  @Override
-  public void checkSearchResults(){
-	  assertEquals("Bug", driver.findElement(By.cssSelector("div.title")).getText());
-  }
-  }
-
-
+  }  
 
 }
